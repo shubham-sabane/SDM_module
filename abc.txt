@@ -1,0 +1,88 @@
+Microsoft Windows [Version 10.0.22621.1105]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Shubham\ASDM\LocRepo>git clone https://github.com/shubham-sabane/SDM_module.git
+Cloning into 'SDM_module'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+D:\Shubham\ASDM\LocRepo>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 881E-D1BB
+
+ Directory of D:\Shubham\ASDM\LocRepo
+
+17-05-2023  02:34    <DIR>          .
+17-05-2023  02:33    <DIR>          ..
+17-05-2023  02:34    <DIR>          SDM_module
+               0 File(s)              0 bytes
+               3 Dir(s)  72,146,644,992 bytes free
+
+D:\Shubham\ASDM\LocRepo>cd SDM_module
+
+D:\Shubham\ASDM\LocRepo\SDM_module>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+D:\Shubham\ASDM\LocRepo\SDM_module>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        WebApp/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Shubham\ASDM\LocRepo\SDM_module>git add .
+
+D:\Shubham\ASDM\LocRepo\SDM_module>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   WebApp/.gitignore
+        new file:   WebApp/Dockerfile
+        new file:   WebApp/package.json
+        new file:   WebApp/public/index.html
+        new file:   WebApp/server.js
+
+
+D:\Shubham\ASDM\LocRepo\SDM_module>git commit -m "Ready to deploy"
+[main c722af5] Ready to deploy
+ 5 files changed, 73 insertions(+)
+ create mode 100644 WebApp/.gitignore
+ create mode 100644 WebApp/Dockerfile
+ create mode 100644 WebApp/package.json
+ create mode 100644 WebApp/public/index.html
+ create mode 100644 WebApp/server.js
+
+D:\Shubham\ASDM\LocRepo\SDM_module>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\Shubham\ASDM\LocRepo\SDM_module>git push
+remote: Internal Server Error
+fatal: unable to access 'https://github.com/shubham-sabane/SDM_module.git/': The requested URL returned error: 500
+
+D:\Shubham\ASDM\LocRepo\SDM_module>git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.43 KiB | 244.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: fatal error in commit_refs
+To https://github.com/shubham-sabane/SDM_module.git
+ ! [remote rejected] main -> main (failure)
+error: failed to push some refs to 'https://github.com/shubham-sabane/SDM_module.git'
+
+D:\Shubham\ASDM\LocRepo\SDM_module>
